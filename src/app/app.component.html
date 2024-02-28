@@ -1,0 +1,21 @@
+
+
+<div class="app-container">
+  <ng-container *ngIf="isMainRoute()">
+    <app-header></app-header>
+    <app-sidenav ></app-sidenav>
+    
+  </ng-container>
+  <router-outlet></router-outlet>
+</div>
+
+<!--<app-header></app-header>
+
+<app-sidenav [isCollapsed]="sidenavCollapsed" (toggleSidebar)="sidenavCollapsed = !sidenavCollapsed"></app-sidenav>
+<div class="content" [ngClass]="{ 'sidenavCollapsed': sidenavCollapsed }">
+  <router-outlet></router-outlet>
+</div>-->
+
+
+
+
